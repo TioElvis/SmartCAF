@@ -3,8 +3,8 @@ import { join } from 'node:path';
 import Handlebars from 'handlebars';
 import { Injectable } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
+import { TEMPLATES_ROOT } from '../lib/constants';
 import { existsSync, readFileSync } from 'node:fs';
-import { TEMPLATES_ROOT } from 'src/lib/constants';
 
 @Injectable()
 export class ResendProvider {
