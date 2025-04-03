@@ -1,0 +1,11 @@
+# dependencies
+node_modules
+pnpm-lock.yaml
+
+# build
+dist
+.next/
+
+# environment variables
+*.env
+next-env.d.ts
