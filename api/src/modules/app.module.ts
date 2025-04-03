@@ -4,7 +4,7 @@ import { AppController } from './app.controller';
 import { MongooseModule } from '@nestjs/mongoose';
 import { PassportModule } from '@nestjs/passport';
 import { ConfigModule, ConfigService } from '@nestjs/config';
-import { ResendProvider } from '@/providers/resend.provider';
+import { ResendProvider } from 'src/providers/resend.provider';
 
 @Module({
   imports: [
