@@ -4,6 +4,7 @@ import { AppController } from './app.controller';
 import { MongooseModule } from '@nestjs/mongoose';
 import { PassportModule } from '@nestjs/passport';
 import { ConfigModule, ConfigService } from '@nestjs/config';
+import { ResendProvider } from '@/providers/resend.provider';
 
 @Module({
   imports: [
@@ -26,5 +27,6 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
     PassportModule,
   ],
   controllers: [AppController],
+  providers: [ResendProvider],
 })
 export class AppModule {}
