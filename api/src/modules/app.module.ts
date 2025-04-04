@@ -1,5 +1,6 @@
 import { Module } from '@nestjs/common';
 import { JwtModule } from '@nestjs/jwt';
+import { AuthModule } from './auth/auth.module';
 import { UserModule } from './user/user.module';
 import { AppController } from './app.controller';
 import { MongooseModule } from '@nestjs/mongoose';
@@ -28,6 +29,7 @@ import { ResendProvider } from '../providers/resend.provider';
     }),
     PassportModule,
     UserModule,
+    AuthModule,
   ],
   controllers: [AppController],
   providers: [ResendProvider, JwtStrategy],
